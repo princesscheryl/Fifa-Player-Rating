@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import joblib as my_joblib
 from sklearn.preprocessing import StandardScaler
 
 st.title('FIFA Player Rating Prediction')
