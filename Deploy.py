@@ -40,11 +40,12 @@ if submit:
     expected_columns = ['weak_foot','pace', 'shooting', 'passing', 'dribbling', 'defending', 'physic']
     input_df = input_df[expected_columns]
 
-    #load trained model
-    xgb_model = joblib.load('modelxgb.pkl')
+    xgb_filename = 'modelxgb.pkl'
+    xgb_model = joblib.load(xgb_filename)
 
     #load scaler 
-    scaler = joblib.load('scaler.pkl')
+    scaler_filename = 'scaler.pkl'
+    scaler = joblib.load(scaler_filename)
 
     #print the model type
     st.write(f"Loaded model type: {xgb_model.__class__.__name__}")
