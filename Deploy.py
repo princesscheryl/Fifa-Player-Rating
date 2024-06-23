@@ -40,6 +40,7 @@ if submit:
     expected_columns = ['weak_foot','pace', 'shooting', 'passing', 'dribbling', 'defending', 'physic']
     input_df = input_df[expected_columns]
 
+    #load trained model
     xgb_filename = 'modelxgb.pkl'
     xgb_model = my_joblib.load(xgb_filename)
 
